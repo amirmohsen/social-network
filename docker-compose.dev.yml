@@ -1,0 +1,29 @@
+version: '2'
+services:
+  elasticsearch:
+    image: elasticsearch
+    ports:
+      - 9200:9200
+  mongo:
+    image: mongo:3
+    ports:
+      - '27017:27017'
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/usr/app:rw
+    ports:
+      - '5000:5000'
+      - '3000:3000'
+    links:
+      - mongo
+    command: >
+        sh -c '
+         cd /usr/app &&
+         yarn install &&
+         yarn run config-docker &&
+         yarn run build-builder &&
+         yarn run dev
+        '

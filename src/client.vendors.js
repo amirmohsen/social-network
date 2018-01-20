@@ -1,0 +1,23 @@
+/**
+ * This file is used for generating the vendor DLL bundle (only used during dev) which helps reduce webpack rebuild time.
+ */
+require("babel-polyfill");
+require("es6-error");
+require("extend");
+require("history");
+require("isomorphic-fetch");
+require("json-stringify-safe");
+require("jsonwebtoken");
+require("path");
+require("path-to-regexp");
+require("prop-types");
+require("qs");
+require("react");
+require("react-dom");
+require("react-helmet");
+require("react-redux");
+require("react-router-dom");
+require("react-router-redux");
+require("redux");
+require("redux-thunk");
+require("validator");

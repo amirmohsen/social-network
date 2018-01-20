@@ -1,0 +1,13 @@
+FROM node:carbon
+
+WORKDIR /usr/app
+
+COPY package.json yarn.lock ./
+
+RUN yarn install
+
+COPY . .
+
+RUN yarn run config-docker-test
+
+CMD ["yarn", "test"]

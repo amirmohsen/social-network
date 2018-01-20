@@ -1,0 +1,31 @@
+.darkPrimaryColor    {
+	background: #0288D1;
+}
+
+.defaultPrimaryColor {
+	background: #03A9F4;
+}
+
+.lightPrimaryColor   {
+	background: #B3E5FC;
+}
+
+.textPrimaryColor    {
+	color: #FFFFFF;
+}
+
+.accentColor          {
+	background: #FFEB3B;
+}
+
+.primaryTextColor    {
+	color: #212121;
+}
+
+.secondaryTextColor  {
+	color: #757575;
+}
+
+.dividerColor         {
+	border-color: #BDBDBD;
+}

@@ -1,0 +1,24 @@
+.root {
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+:global {
+
+	& html,
+	& body,
+	& .app-main-wrapper {
+		min-height: 100vh;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	//& *,
+	//& *:focus,
+	//& *:active {
+	//	outline: none;
+	//}
+}
